@@ -1,0 +1,8 @@
+{
+  "appId": "com.addonsmaker.minecraft",
+  "appName": "Addons Maker for Minecraft",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}
