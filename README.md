@@ -1,27 +1,37 @@
-# CraftLab · Creador de addons para Minecraft Bedrock
+# Addons Maker for Minecraft Bedrock
 
-Aplicación web instalable (PWA) en español para diseñar elementos de addons y exportarlos como paquetes `.mcaddon` que Minecraft Bedrock puede importar. Desde un navegador compatible, usa **Instalar app** para añadir CraftLab a tu dispositivo; no requiere una descarga de APK.
+Creador web instalable para diseñar complementos de Minecraft Bedrock y exportarlos en formato `.mcaddon`. La interfaz está en español y los proyectos se guardan automáticamente en este navegador.
 
-## Ejecutar
+## Instalar desde GitHub
+
+Cuando GitHub Actions complete la publicación en Pages, abre **https://lyanvalentinmail-prog.github.io/Addons-maker/** desde el dispositivo donde quieras usar la app y elige **Instalar app**.
+
+- **Android / Chrome:** toca *Instalar app* o abre el menú ⋮ → *Instalar app* / *Añadir a pantalla principal*.
+- **iPhone / iPad:** en Safari toca *Compartir* → *Añadir a pantalla de inicio*.
+- **Computadora:** en Chrome o Edge usa el icono de instalación de la barra de direcciones o el menú del navegador.
+
+La publicación se realiza automáticamente al actualizar `main`, mediante el workflow **Deploy Addons Maker to GitHub Pages**. Si GitHub Pages aún no está habilitado en el repositorio, selecciónalo en **Settings → Pages → Build and deployment → GitHub Actions**.
+
+## Ejecutar en desarrollo
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
-Para generar una versión de producción:
+Crear una compilación de producción y probarla localmente:
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## Qué incluye
+## Funciones
 
-- Creación y edición de entidades, objetos, bloques, recetas, botín, biomas, funciones y efectos.
-- Edición de propiedades como vida, daño, durabilidad, resistencia, luz, ingredientes y probabilidades.
-- Opción de usar entidades u objetos vanilla como base para modificarlos.
-- Guardado automático local en el navegador e importación/exportación de proyectos CraftLab en JSON.
-- Exportación de un `.mcaddon` con paquetes de comportamiento y recursos, manifiestos y archivos JSON de juego.
+- Crear y editar entidades, objetos, bloques, recetas, botín, biomas, funciones y efectos.
+- Ajustar propiedades como vida, daño, durabilidad, resistencia, luz, ingredientes y probabilidades.
+- Elegir entidades y objetos vanilla como base de personalización.
+- Guardar/importar proyectos de Addons Maker en JSON y exportar paquetes `.mcaddon`.
+- Instalar como PWA desde GitHub Pages y abrir la app sin conexión tras la primera carga.
 
-El contenido generado es una base editable: según la categoría y la versión de Bedrock, puede requerir texturas, modelos o ajustes adicionales dentro del juego.
+El addon exportado es un punto de partida editable; según la categoría y la versión de Bedrock, puede requerir texturas, modelos o ajustes adicionales en el juego.
