@@ -31,12 +31,16 @@ El APK de depuración queda en `android/app/build/outputs/apk/debug/app-debug.ap
 ## Funciones
 
 - Biblioteca offline con 3.825 imágenes navegables y búsqueda por categoría/subcategoría.
+- Importar paquetes `.mcpack`, `.mcaddon` o `.zip` propios y explorar sus imágenes bajo `textures/`; se guardan localmente en el dispositivo.
+- Usar imágenes importadas como texturas para entidades, objetos y bloques personalizados y empaquetarlas en el `.mcaddon` exportado.
 - Crear y editar entidades, objetos, bloques, recetas, botín, biomas, funciones y efectos.
 - Añadir imágenes del catálogo a los elementos y usarlas en los iconos de ítems/bloques exportados.
 - Ajustar vida, daño, durabilidad, resistencia, luz, ingredientes y probabilidades.
 - Usar entidades, objetos y bloques vanilla como base de personalización.
 - Guardar proyectos localmente y exportarlos/importarlos como JSON.
 - Exportar paquetes `.mcaddon` para abrir o compartir con Minecraft Bedrock desde Android.
+
+Para acceder a texturas originales de un pack, impórtalo desde **Biblioteca visual → Importar .mcpack**. También se admiten `.mcaddon` y `.zip`; las imágenes se almacenan localmente en la app y solo se incluyen en una exportación si las seleccionas para un elemento. La biblioteca incluida contiene miniaturas comunitarias, no el conjunto completo de mapas UV oficiales de Minecraft. El proyecto no redistribuye los archivos oficiales de Mojang.
 
 ## Atribución de imágenes
 
